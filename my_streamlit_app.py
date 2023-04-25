@@ -14,7 +14,7 @@ model = OpenAI(openai_api_key=openai_api_key_toml, temperature=0)
 
 
 template = """
-As an AI programmed to censor CVs, my task is to remove personal identifiers such as gender, age, sexual orientation, ethnicity, or any other information that could potentially lead to discrimination against the applicant. This includes censoring details such as the applicant's name and email address. For instance, I might replace "test@email.com" with "********" to protect the applicant's identity.
+As an AI programmed to censor CVs, my task is to remove personal identifiers such as gender, age, sexual orientation, ethnicity, or any other information that could potentially lead to discrimination against the applicant. This includes censoring details such as the applicant's full name and email address. For instance, I might replace "test@email.com" with "********" to protect the applicant's identity.
 
 CV Context ---
 {application}
